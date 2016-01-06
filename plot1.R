@@ -13,6 +13,6 @@ subdata$date.time <- strptime(paste(subdata$Date, subdata$Time), format="%Y-%m-%
 
 # 4. Plot the histogram in a png
 
+png("plot1.png", width = 480, height = 480, units = "px", bg="transparent")
 hist(subdata$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
-dev.copy(png, file = "plot1.png", width = 480, height = 480)
 dev.off()

@@ -12,7 +12,6 @@ subdata <- subset(data, Date == "2007-02-01" | Date == "2007-02-02")
 subdata$date.time <- strptime(paste(subdata$Date, subdata$Time), format="%Y-%m-%d %H:%M:%S")
 
 # 4. Plot in a png
-
+png("plot2.png", width = 480, height = 480, units = "px", bg="transparent")
 plot(subdata$date.time, subdata$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
-dev.copy(png, file = "plot2.png", width = 480, height = 480)
 dev.off()

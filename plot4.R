@@ -13,7 +13,7 @@ subdata$date.time <- strptime(paste(subdata$Date, subdata$Time), format="%Y-%m-%
 
 # 4. Plot in a png
 
-png("plot4.png", width = 480, height = 480)
+png("plot4.png", width = 480, height = 480, units = "px", bg="transparent")
 par(mfrow=c(2,2))
 plot(subdata$date.time, subdata$Global_active_power, xlab ="", ylab="Global Active Power (kilowatts)", type="l")
 plot(subdata$date.time, subdata$Voltage, xlab="datetime", ylab= "Voltage", type="l")

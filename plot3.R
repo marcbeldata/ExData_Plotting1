@@ -13,7 +13,7 @@ subdata$date.time <- strptime(paste(subdata$Date, subdata$Time), format="%Y-%m-%
 
 # 4. Plot in a png
 
-png("plot3.png", width = 480, height = 480)
+png("plot3.png", width = 480, height = 480, units = "px", bg="transparent")
 plot(subdata$date.time,subdata$Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l")
 lines(subdata$date.time, subdata$Sub_metering_2, col = "red", type = "l")
 lines(subdata$date.time, subdata$Sub_metering_3, col = "blue", type = "l")
