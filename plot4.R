@@ -21,5 +21,5 @@ plot(subdata$date.time, subdata$Sub_metering_1, xlab="", ylab="Energy sub meteri
 lines(subdata$date.time, subdata$Sub_metering_2, col="red", type="l")
 lines(subdata$date.time, subdata$Sub_metering_3, col="blue", type="l")
 legend("topright", lty = c(1, 1, 1), col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
-plot(subdata$date.time, subdata$Global_reactive_power, xlab="datetime", type="l")
+plot(subdata$date.time, subdata$Global_reactive_power, xlab="datetime", ylab="Global_reactive_power", type="l")
 dev.off()
